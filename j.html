@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="9.css">
+  <style>
+    body{
+      font-family: phetsarath ot;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- ພາກສ່ວນປຸ່ມເປີດ modal-->
+   <button type="button" class="btn btn-primary mt-3 " data-bs-toggle="modal" data-bs-target="#show" >ເປີດ modal</button>
+ <!-- ປິດພາກສ່ວນປຸ່ມmodal -->
+
+
+ <!-- ເລີ່ມຂຽນ modal -->
+<div class="modal fade" id="show">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <!-- ພາກສ່ວນຫົວ -->
+        <h4 class="modal-title">ສ່ວນຫົວ</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- ພາກສ່ວນເນື້ອໃນ -->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-6">
+  <!-- name -->
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" name="name" class="form-control" placeholder="plese enter your name">
+                <label for="name" class="form-label" for="floating">ຊື່:</label>
+              </div>
+            </div>
+  
+            <br>
+  <!-- nam sa goun -->
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" name="name" class="form-control" placeholder="plese enter your lastname">
+                <label for="name" class="form-label" for="floating">ນາມສະກຸນ:</label>
+              </div>
+            </div>
+            
+  <!-- page -->
+  
+   <div class="form-group mt-3" >
+    <label for="gender" class="form-label" for="floating">ເພດ:</label>
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <input type="radio" name="gender" class="form-check-input" value="woman">ຍິງ
+  
+    &nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <input type="radio" name="gender" id="form-check-input" value="man">ຊາຍ
+   </div>
+          </div>
+          <!-- village -->
+  
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" name="village" class="form-control" placeholder="plese enter your village">
+                <label for="village" class="form-label" for="floating">ບ້ານ:</label>
+              </div>
+            </div><br>
+  
+            <!-- district -->
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" name="district" class="form-control" placeholder="plese enter your district">
+                <label for="district" class="form-label" for="floating">ເມືອງ:</label>
+              </div>
+            </div><br>
+  
+            <!-- province -->
+            <div class="form-group">
+              <div class="form-floating">
+                <input type="text" name="province" class="form-control" placeholder="plese enter your province">
+                <label for="province" class="form-label" for="floating">ແຂວງ:</label>
+              </div>
+            </div>
+          </div>
+          </div>
+  
+          <!-- ສ້າງ row ໃໝ່ -->
+          <div class="row mt-3">
+            <div class="col-sm-12">
+              <label for="">ໝາຍເຫດ:</label>
+              <textarea name="" class="form-control" id=""></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <button type="button" class="btn btn-success">save</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-danger">cancel</button>
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
